@@ -14,12 +14,12 @@ a {
 }
 .main-page-1280{
     display: grid;
-    grid-template-columns: 1fr 1280px 1fr;
+    grid-template-columns: 1fr 1263px 1fr;
     /*grid-auto-rows: 908px 590px;*/
 }
 
 .start-screen-1280{
-    width: 1280px;
+    width: 1263px;
     height: 908px;
     grid-column: 2/3;
     background-image: url('./images/start-screen-background2.jpg');
@@ -44,11 +44,13 @@ a {
 .header-1280{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 1200px;
     height: 60px;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
+    align-content: center;
 }
 .header-logo-1280{
     display: flex;
@@ -107,7 +109,9 @@ color: #FFFFFF;
     width: 435px;
  display: flex;
  flex-direction: row;  
+ flex-wrap: wrap;
  justify-content: space-between;
+ align-content: center;
 /* About the shelter */
 
 
@@ -234,7 +238,7 @@ margin-bottom: 24px;
 .about-1280{
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 1280px;
+    width: 1263px;
     height: 590px;
 }
 
@@ -321,7 +325,7 @@ margin-bottom: 24px;
 .pets-1280{
     display: flex;
     flex-direction: column;
-    width: 1280px;
+    width: 1263px;
     height: 880px;
     grid-column: 2/3;
     /*border: 1px solid black;*/
@@ -432,6 +436,7 @@ margin: 0 400px 60px 400px;
     height: 435px;
     width: 270px;
     border-radius: 9px;
+    background: #F6F6F6;
 
 }
 
@@ -512,7 +517,7 @@ margin: 25px 41px 30px 41px;
 .help-1280{
     display: flex;
     flex-direction: column;
-    width: 1280px;
+    width: 1263px;
     height: 610px;
     grid-column: 2/3;
 }
@@ -655,7 +660,7 @@ margin:0 446px 60px 446px
     display: flex;
     flex-direction: column;
     grid-column: 2/3;
-    width: 1280px;
+    width: 1263px;
     height: 462px;
     background: #F6F6F6;
 
@@ -786,7 +791,7 @@ margin:0 446px 60px 446px
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 1280px;
+    width: 1263px;
     grid-column: 2/3;
     background-image: url('./images/start-footer-background.png');
     background-position: center;
