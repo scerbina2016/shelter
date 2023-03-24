@@ -1,16 +1,19 @@
 :root{box-sizing: border-box;
-
     margin: 0px;
-    padding: 0px;
-    
-    }
+    padding: 0px;    
+}
 
     *,
     ::before,
     ::after{box-sizing: inherit;}
+
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 .our-pets-1280{
@@ -35,8 +38,12 @@ a {
     cursor: pointer;
     margin-right: 570px;
     color: #545454;
-
 }
+
+.hed-hov:hover{
+   color:black;
+}
+
 .our-pets-header-logo-link-1280{
     text-decoration: none;
 }
@@ -57,62 +64,40 @@ a {
     letter-spacing: 0.06em;
     color: #545454; 
 }
-/* #545454;*/
-
-
 
 .our-pets-header-logo-subtitle-1280{
-margin-left: 4px;
-margin-top: 10px;
-margin-bottom: 0;
-margin-right: 0;
-
-width: 190px;
-height: 15px;
-left: 4px;
-top: calc(50% - 15px/2 + 22.5px);
-
-/* logo_subtitle */
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 15px;
-/* identical to box height */
-display: flex;
-align-items: center;
-letter-spacing: 0.1em;
-
-/* color-light-xl */
-color: #545454;
+    margin-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 190px;
+    height: 15px;
+    left: 4px;
+    top: calc(50% - 15px/2 + 22.5px);
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #545454;
 }
 
 .our-pets-header-nav-1280{
     width: 435px;
- display: flex;
- flex-direction: row;  
- flex-wrap: wrap;
- align-content: center;
- justify-content: space-between;
-/* About the shelter */
-
-
-/* paragraph-l */
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-/* identical to box height, or 24px */
-
-/* color-light-s */
-color: #545454;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
 }
 .our-pets-header-nav-pets-1280{
     text-decoration: underline;
@@ -129,7 +114,6 @@ flex-grow: 0;
     flex-direction: column;
     height: 1342px;
     width: 1263px;
-    border: 1px solid blue;
     grid-column: 2/3;
     background: #F6F6F6;
 }
@@ -153,7 +137,6 @@ flex-grow: 0;
     flex-direction: column;
     height: 1162px;
     width: 1200px;
-    border: 1px solid red;
     margin: 80px 32px 100px 31px;
 }
 
@@ -166,8 +149,7 @@ flex-grow: 0;
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: center;
-margin: 0 400px 45px 400px;
-
+    margin: 0 400px 45px 400px;
 }
 
 .our-pets-pet-content-card-container{
@@ -177,14 +159,10 @@ margin: 0 400px 45px 400px;
     justify-content: space-between;
     height: 930px;
     width: 1200px;
-    border: 1px solid green;
-
 }
 #pet-card{
     margin: 0;
     background: #FAFAFA;
-    
-
 }
 .slider-foto-4{
     background-image: url('../images/pets/pets-sophia.png');
@@ -216,14 +194,59 @@ margin: 0 400px 45px 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     height: 52px;
     width: 340px;
-    border: 1px solid orangered;
     margin:45px 430px 0 430px;
 }
 
+.button-paginator{
+    height: 52px;
+    width: 52px;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+}
+.button-paginator:hover{
+    font-size: 30px;
+    border-width: 4px;
+}
 
+.button-paginator:active{
+    font-size: 30px;
+    border-width: 4px;
+    color:#F1CDB3;
+}
 
+.paginator-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-paginator-center{
+    color:#292929;
+    background-color:#F1CDB3 ;
+    border: 2px solid #F1CDB3;
+}
+
+.button-paginator-inactive-right-1{
+    color:#292929;
+    border: 2px solid #F1CDB3;
+}
+
+.button-paginator-inactive-right-2{
+    color:#292929;
+    border: 2px solid #F1CDB3;
+}
 
 /*===========================================footer's start==============================================*/
 .our-pets-footer-left{
