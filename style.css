@@ -486,12 +486,12 @@ margin: 2.35vw 7.69vw 1.96vw 7.69vw;
 }
 .slider-card-button{
 height: 4.47vw;
-width: 15.99vw;
+width: 16.99vw;
 background-image: url('./images/slider-card-button.png');
 cursor: pointer;
 margin: 1.96vw 3.22vw 2.35vw 3.22vw;
 background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -796,7 +796,7 @@ margin:0 34.98vw 4.71vw 34.98vw
     display: flex;
     flex-direction: column;
     height: 33.92vw;
-    width: 98vw;
+    width: 100%;/*98vw*/
     grid-column: 2/3;
     background-image: url('./images/start-footer-background.png');
     background-position: center;
