@@ -75,7 +75,8 @@ a {
 }
 @media screen and (max-width: 769px) {
     .header-1280{
-        height: 7.76vw;/*4.7vw*/
+        height: 7.76vw;/*4.7vw 7.76*/
+        width: 94.12vw;
         margin-top: 3.88vw;
 }
 }
@@ -88,7 +89,7 @@ a {
 }
 @media screen and (max-width: 769px) {
     .header-logo-1280{
-        margin-right: 10.54vw;
+        margin-right: 10vw;
 }
 }
 .header-logo-link-1280{
@@ -356,13 +357,35 @@ margin-bottom: 1.88vw;
     height: 46.27vw;
 }
 
+@media screen and (max-width: 769px) {
+
+    .about-1280{
+        height: 135.23vw;
+    }
+}
+
+
 .start-about-1280{
     display: flex;
     flex-direction: row;
+    
     width: 94.12vw;
     height: 32.16vw;
     margin: 6.27vw auto 7.84vw auto;/*left, right 1.14*/
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-about-1280{
+        flex-direction: column;
+        margin-top: 10.32vw;
+        margin-bottom: 12.9vw;
+        height: 112vw;
+        width: 56.39vw;
+    
+    }
+}
+
 
 .start-about-pets-1280{
     width: 23.53vw;
@@ -374,13 +397,35 @@ margin-bottom: 1.88vw;
     
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-about-pets-1280{
+        order: 2;
+        width: 38.71vw;
+        height: 52.65vw;
+        margin: 10vw auto 0 auto;
+    }
+}
+
 .start-about-content-1280{
     display: flex;
     flex-direction: column;
     width: 33.73vw;
     height: 36.27vw;
     margin: 0 13.73vw 0 0;
+ 
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-about-content-1280{
+        order: 1;
+        width: 55.48vw;
+        height: 49.03vw;
+        margin: 0 auto 0 auto;
+    }
+}
+
 
 .start-about-content_heading{
     width: 29.02vw;
@@ -397,6 +442,17 @@ margin-bottom: 1.88vw;
     margin-bottom: 1.96vw;
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-about-content_heading{
+        font-size: 4.52vw;
+        width: 47.74vw;
+        height: 11.61vw;
+        margin-bottom: 3.23vw;
+    }
+}
+
+
 .start-about-content_subhead_1{
     width: 33.73vw;
     height: 7.53vw;
@@ -407,6 +463,17 @@ margin-bottom: 1.88vw;
     line-height: 160%;
     color: #4C4C4C;
     margin-bottom: 1.96vw;
+}
+
+@media screen and (max-width: 769px) {
+
+    .start-about-content_subhead_1{
+        
+        width: 55.48vw;
+        height: 12.39vw;
+        font-size: 1.94vw;
+        margin-bottom: 3.23vw;
+    }
 }
 
 .start-about-content_subhead_2{
@@ -421,20 +488,20 @@ margin-bottom: 1.88vw;
     align-items: center;
     color: #4C4C4C;
 }
-/*====================================================pets===================================================
-/*.pets-left{
-    height: 86.27vw;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background: #F6F6F6; 
+
+@media screen and (max-width: 769px) {
+
+    .start-about-content_subhead_2{
+        
+        width: 55.48vw;
+        height: 18.58vw;
+        font-size: 1.94vw;
+    }
 }
 
-.pets-right{
-    height: 86.27vw;
-    grid-column: 3/4;
-    grid-row: 3/4;
-    background: #F6F6F6; 
-}*/
+
+/*====================================================pets=================================================*/
+
 
 .pets-1280{
     display: flex;
@@ -446,6 +513,15 @@ margin-bottom: 1.88vw;
     background: #F6F6F6;
 }
 
+@media screen and (max-width: 769px) {
+
+    .pets-1280{
+
+        height: 113.16vw;
+        
+    }
+}
+
 .start-pets-content-1280{
     display: flex;
     flex-direction: column;
@@ -455,42 +531,52 @@ margin-bottom: 1.88vw;
 
 }
 
-.start-pets-content-button{
-    /* button_primary */
+@media screen and (max-width: 769px) {
 
-/* Auto layout */
+    .start-pets-content-1280{
+
+        width: 91.35vw;
+        height: 94.94vw;
+        
+    }
+}
+
+
+.start-pets-content-button{
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 align-items: center;
+justify-content: center;
 padding: 1.18vw 3.53vw;
 gap: 0.78vw;
-
-
 width: 20.78vw;
 height: 4.08vw;
-
-
 background: #F1CDB3;
 border-radius: 7.84vw;
-
-
-/* Get to know the rest */
-
-
-
 font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 1.34vw;
 line-height: 130%;
-/* identical to box height, or 1.73vw */
 letter-spacing: 0.06em;
-
-/* color-dark-3xl */
 color: #292929;
 margin: 0vw 36.63vw 7.84vw 36.55vw;/*top 4.71vw*/
 cursor: pointer;
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-pets-content-button{
+
+        width: 29.81vw;
+        height: 6.71vw;
+        font-size: 2.2vw;
+        border-radius: 12.86vw;
+        margin: auto auto 0 auto;
+    }
+}
+
 .start-pets-content-button:hover{
     background: #FDDCC4;
 }
@@ -521,6 +607,18 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-pets-contetnt-heading{
+
+        width: 51.61vw;
+        height: 11.61vw;
+        margin: 0 auto 7.74vw auto;
+        font-size: 4.52vw;
+    }
+}
+
+
 .start-pets-content-slider{
     display: flex;
     flex-direction: row;
@@ -528,6 +626,18 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     height: 42.76vw;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-pets-content-slider{
+        justify-content: space-between;
+        width: 91.35vw;
+        height: 56.13vw;
+    
+        
+    }
+}
+
 
 .slider-button-left{
     height: 4.08vw;
@@ -543,6 +653,18 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     margin-right: 4.16vw;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .slider-button-left{
+
+        width: 6.71vw;
+        height: 6.71vw;
+        border-radius: 12.86vw;
+        margin: auto 0 auto 0;
+    }
+}
+
 .slider-button-left:hover{
     background-image: url('./images/button_arrow_left_hover.png');
 }
@@ -557,8 +679,44 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 
 }
 
+@media screen and (max-width: 769px) {
+
+    .slider-card{
+
+        width: 34.84vw;
+        height: 56.13vw;
+        border-radius: 0.28vw;
+       
+    }
+    .slider-card-3{
+        display: none;
+    }
+    /* ???????????????????????????????????????????????????
+    .slider-foto-3{
+        width: 0;
+    }
+    .sleder-name-3{
+        width: 0;
+    }
+    .slider-button-3{
+        width: 0;
+    }
+    ??????????????????????????????????????????????????????????*/
+}
+
+
+
 .slider-card-2{
     margin: 0 7.06vw;
+}
+
+@media screen and (max-width: 769px) {
+
+    .slider-card-2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 }
 
 .slider-button-right{
@@ -574,16 +732,43 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 769px) {
+
+    .slider-button-right{
+
+        width: 6.71vw;
+        height: 6.71vw;
+        border-radius: 12.86vw;
+        margin: auto 0 auto 0;
+
+    }
+}
+
+
 .slider-button-right:hover{
     background-image: url('./images/button_arrow_right_hover.png');
 }  
 
 .slider-card-foto{
     height: 21.18vw;
-    width: 21.02vw;
+    width: 21.18vw;
     border-top-right-radius: 0.71vw;
     border-top-left-radius: 0.71vw;
 }
+
+@media screen and (max-width: 769px) {
+
+    .slider-card-foto{
+
+        width: 34.84vw;
+        height: 34.84vw;
+        
+        margin: auto 0 auto 0;
+
+    }
+}
+
 
 .slider-card-name{
 width: 5.08vw;
@@ -602,6 +787,19 @@ color: #545454;
 margin: 2.35vw 7.69vw 1.96vw 7.69vw;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .slider-card-name{
+
+        width: 9.55vw;
+        height: 2.97vw;
+       font-size: 2.58vw;
+        margin: 3.87vw auto 3.87vw auto;
+
+    }
+}
+
 .slider-card-button{
 height: 4.47vw;
 width: 16.99vw;
@@ -611,6 +809,17 @@ margin: 1.96vw 3.22vw 2.35vw 3.22vw;
 background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 769px) {
+
+    .slider-card-button{
+
+        width: 24.13vw;
+        height: 6.71vw;
+        margin: auto;
+
+    }
 }
 
 .slider-card-button:hover{
@@ -635,7 +844,7 @@ background-position: center;
     background-position: center;
     background-size:cover;
 }
-
+/*=============================================help==============================================*/
 .help-1280{
     display: flex;
     flex-direction: column;
