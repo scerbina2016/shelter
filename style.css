@@ -133,7 +133,7 @@ flex-grow: 0;*/
     text-decoration-thickness: 0.24vw;
 }
 
-#header-nav:hover{
+.header-nav:hover{
     font-weight: 700;
 }
 
