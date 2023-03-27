@@ -1119,6 +1119,16 @@ margin:0 34.98vw 4.71vw 34.98vw
 
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-donation-content-img{
+        width: 65.16vw;
+        height: 33.68vw;
+        
+    }
+
+}
+
 .start-donation-content-text{
     display: flex;
     flex-direction: column;
@@ -1229,15 +1239,15 @@ margin:0 34.98vw 4.71vw 34.98vw
     text-align: left;
     margin-right: 0.78vw;
 }
-/*========================================= down =============================================*/
+
 @media screen and (max-width: 769px) {
 
     .card-num{
 
-        width: 45.03vw;
-        height: 5.55vw;
-        border-radius: 1.16vw;
-        margin: 0 auto 2.58vw 0;
+        width: 35.35vw;
+        height: 2.97vw;
+        font-size: 2.57vw;
+        line-height: 2.95vw;
         
     }
 
@@ -1254,6 +1264,17 @@ margin:0 34.98vw 4.71vw 34.98vw
 
 }
 
+@media screen and (max-width: 769px) {
+
+    .card-ico{
+
+        width: 3.87vw;
+        height: 2.97vw;
+
+    }
+
+}
+
 .start-donation-content-legal{
     height: 5.65vw;
     width: 36.27vw;
@@ -1267,23 +1288,19 @@ margin:0 34.98vw 4.71vw 34.98vw
     color: #B2B2B2;
 }
 
-.footer-left{
-    height: 33.92vw;
-    grid-column: 1/2;
-    grid-row: 6/7;
-    background-image: url('./images/start-footer-background-rotate-2.png');
-    background-position: center;
-    background-size: cover;
-}
+@media screen and (max-width: 769px) {
 
-.footer-right{
-    height: 33.92vw;
-    grid-column: 3/4;
-    grid-row: 6/7;
-    background-image: url('./images/start-footer-background-rotate.png');
-    background-position: center;
-    background-size: cover;
+    .start-donation-content-legal{
+
+        width: 49.03vw;
+        height: 9.29vw;
+        font-size: 1.54vw;
+        line-height: 2.31vw;
+
+    }
+
 }
+/*========================================= footer =============================================*/
 
 
 .footer-1280{
