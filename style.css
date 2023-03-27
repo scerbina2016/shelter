@@ -47,21 +47,7 @@ a {
     }
 
 }
-/*.start-screen-left{
-    grid-column: 1/2;
-    background-image: url('./images/start-screen-background2-rotate.jpg');
-    background-position: center;
-    background-size:cover;
-    height: 71vw;
-}
-.start-screen-right{
-    grid-column: 3/4;
-    background-image: url('./images/start-screen-background2-rotate.jpg');
-    background-position: center;
-    background-size:cover;
-    height: 71vw;
 
-}*/
 .header-1280{
     display: flex;
     flex-direction: row;
