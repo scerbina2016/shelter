@@ -525,7 +525,7 @@ margin-bottom: 1.88vw;
 .start-pets-content-1280{
     display: flex;
     flex-direction: column;
-    width: 94.18vw;
+    width: 95.18vw;/*94.18vw*/
     height: 54.9vw;
     margin: 6.27vw 1.14vw 7.61vw 1.14vw;
 
@@ -622,7 +622,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 .start-pets-content-slider{
     display: flex;
     flex-direction: row;
-    width: 94.18vw;
+    width: 95.18vw;
     height: 42.76vw;
 
 }
@@ -727,7 +727,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 /*FDDCC4*/
     cursor: pointer;
     margin-top: 15.06vw;
-    margin-left: 4.16vw;
+    margin-left: 5.16vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -850,8 +850,19 @@ background-position: center;
     flex-direction: column;
     width: 100%;
     height: 47.92vw; /*60.78vw*/
-    grid-column: 2/3;
+   
 }
+
+@media screen and (max-width: 769px) {
+
+    .help-1280{
+
+        
+        height: 100.52vw;
+
+    }
+}
+
 
 .start-help-content{
     display: flex;
@@ -861,6 +872,17 @@ background-position: center;
     margin: 6.27vw 1.14vw 7.84vw 1.14vw;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-help-content{
+
+        width: 81.29vw;
+        height: 77.29vw;
+        margin: 10.32vw auto 12.9vw auto;
+    }
+}
+
 .start-help-content-heading{
 width: 24.16vw;
 height: 7.06vw;
@@ -878,6 +900,17 @@ margin:0 34.98vw 4.71vw 34.98vw
 
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-help-content-heading{
+
+        width: 39.74vw;
+        height: 11.61vw;
+        margin: 0 auto 7.74vw auto;
+        font-size: 4.52vw;
+    }
+}
+
 .start-help-content-list{
     display: flex;
     flex-direction: row;
@@ -886,6 +919,17 @@ margin:0 34.98vw 4.71vw 34.98vw
     width: 80.47vw;
     margin: 0 6.82vw 0 6.82vw;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 769px) {
+
+    .start-help-content-list{
+
+        width: 81.29vw;
+        height: 107.94vw ;
+       align-content: space-between;
+        margin: 0 auto 0 auto;
+    }
 }
 
 .start-help-content-list-item{
@@ -902,6 +946,19 @@ margin:0 34.98vw 4.71vw 34.98vw
     margin-right: 3.14vw;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-help-content-list-item{
+
+        width: 21.94vw;
+        height: 14.58vw;
+        margin: 0;
+        font-size: 2.57vw;
+    }
+}
+
+
 .list-item-1{
     margin-left: 0;
 }
@@ -918,10 +975,31 @@ margin:0 34.98vw 4.71vw 34.98vw
     background-size: cover;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .list-item-icon{
+
+        width: 7.74vw;
+        height: 7.74vw;   
+    }
+    .list-item-icon-1{
+        width: 6.43vw;
+    }
+
+}
+
+
 .list-item-icon-1{
     width: 3.92vw;
-    background-image: url('./images/icons/pet-food.png');
-   
+    background-image: url('./images/icons/pet-food.png');   
+}
+@media screen and (max-width: 769px) {
+
+    .list-item-icon-1{
+        width: 6.43vw;
+    }
+
 }
 
 .list-item-icon-2{
@@ -943,6 +1021,15 @@ margin:0 34.98vw 4.71vw 34.98vw
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 769px) {
+
+    .list-item-icon-5{
+        width: 6.43vw;
+        height: 9vw;
+    }
+
 }
 
 .list-item-icon-6{
@@ -973,27 +1060,23 @@ margin:0 34.98vw 4.71vw 34.98vw
     background-repeat: no-repeat;
 }
 
-/*.donation-left{
-    height: 36.24vw;
-    grid-column: 1/2;
-    grid-row: 5/6;
-    background: #F6F6F6;
-}
-
-.donation-right{
-    height: 36.24vw;
-    grid-column: 3/4;
-    grid-row: 5/6;
-    background: #F6F6F6;
-}*/
-
+/*===================================== donation ==================================================*/
 .donation-1280{
     display: flex;
     flex-direction: column;
-    grid-column: 2/3;
     width: 98vw;
     height: 36.24vw;
     background: #F6F6F6;
+
+}
+
+@media screen and (max-width: 769px) {
+
+    .donation-1280{
+        width: 100%;
+        height: 101.03vw;
+        border: 1px solid red;
+    }
 
 }
 
@@ -1003,6 +1086,26 @@ margin:0 34.98vw 4.71vw 34.98vw
     width: 85.18vw;
     height: 22.12vw;
     margin: 6.27vw 6.27vw 7.84vw 6.20vw;
+}
+
+@media screen and (max-width: 769px) {
+
+    .stard-donation-content{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content:center;
+        /*justify-content: space-between;*/
+        width: 100%;
+        height: 101.03vw;
+        border: 1px solid black;
+        margin: 0;
+    }
+    .start-donation-content-img{
+        order: 2;
+    }
+    .start-donation-content-text{
+        order: 1;
+    }
 }
 
 .start-donation-content-img{
@@ -1023,6 +1126,18 @@ margin:0 34.98vw 4.71vw 34.98vw
     height: 22.12vw;
 }
 
+@media screen and (max-width: 769px) {
+
+    .start-donation-content-text{
+        width: 49.03vw;
+        height: 36.39vw;
+        border: 1px solid greenyellow;
+        margin: 10.32vw auto 7.74vw auto;
+    }
+
+}
+
+
 .start-donation-content-text-heading{
     width: 23.53vw;
     height: 7.06vw;
@@ -1034,6 +1149,18 @@ margin:0 34.98vw 4.71vw 34.98vw
     text-align: left;
     color: #545454;
     margin: 0 6.27vw 1.57vw 0;
+}
+
+@media screen and (max-width: 769px) {
+
+    .start-donation-content-text-heading{
+        width: 38.71vw;
+        height: 11.62vw;
+        font-size: 4.52vw;
+        line-height: 5.79vw;
+        margin: 0 10.32vw 2.58vw 0;
+    }
+
 }
 
 .start-donation-content-text-subheading{
@@ -1048,6 +1175,19 @@ margin:0 34.98vw 4.71vw 34.98vw
     margin: 1.57vw 5.73vw 1.57vw 0;
 
 }
+
+@media screen and (max-width: 769px) {
+
+    .start-donation-content-text-subheading{
+        width: 40.61vw;
+        height: 2.19vw;
+        font-size: 1.94vw;
+        line-height: 2.2vw;
+        margin: 0 auto 2.58vw 0;
+    }
+
+}
+/*============================================ make down from here================================*/
 .start-donation-content-card{
     display: flex;
     flex-direction: row;
