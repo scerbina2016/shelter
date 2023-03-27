@@ -1187,7 +1187,7 @@ margin:0 34.98vw 4.71vw 34.98vw
     }
 
 }
-/*============================================ make down from here================================*/
+
 .start-donation-content-card{
     display: flex;
     flex-direction: row;
@@ -1200,9 +1200,22 @@ margin:0 34.98vw 4.71vw 34.98vw
     align-content: center;
     margin: 0 2.9vw 0.78vw 0;
     cursor: pointer;
+}
 
+@media screen and (max-width: 769px) {
+
+    .start-donation-content-card{
+
+        width: 45.03vw;
+        height: 5.55vw;
+        border-radius: 1.16vw;
+        margin: 0 auto 2.58vw 0;
+
+    }
 
 }
+
+
 .start-donation-content-card:hover{
     background-color: #FDDCC4;
 }
@@ -1216,6 +1229,20 @@ margin:0 34.98vw 4.71vw 34.98vw
     text-align: left;
     margin-right: 0.78vw;
 }
+/*========================================= down =============================================*/
+@media screen and (max-width: 769px) {
+
+    .card-num{
+
+        width: 45.03vw;
+        height: 5.55vw;
+        border-radius: 1.16vw;
+        margin: 0 auto 2.58vw 0;
+        
+    }
+
+}
+
 
 .card-ico{
     height: 1.8vw;
