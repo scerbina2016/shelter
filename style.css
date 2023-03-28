@@ -521,6 +521,12 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
+
+    .about-1280{
+        height: 303.43vw;
+    }
+}
 
 .start-about-1280{
     display: flex;
@@ -543,6 +549,17 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
+
+    .start-about-1280{
+        flex-direction: column;
+        margin: 0;
+       
+        height: 290.26vw;/*277.26*/
+        width: 93.46vw;/*93.46vw*/
+    
+    }
+}
 
 .start-about-pets-1280{
     width: 23.53vw;
@@ -564,11 +581,21 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
+
+    .start-about-pets-1280{
+        order: 2;
+        width: 81vw;
+        height: 110.28vw;
+        margin: 0 auto 0 auto;
+    }
+}
+
 .start-about-content-1280{
     display: flex;
     flex-direction: column;
     width: 33.73vw;
-    height: 36.27vw;
+    height: 40.27vw;/*36.27vw*/
     margin: 0 13.73vw 0 0;
  
 }
@@ -583,6 +610,15 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
+
+    .start-about-content-1280{
+        order: 1;
+        width: 93.46vw;
+        height: 153.89vw;
+        margin: 13.08vw auto 13.08vw auto;
+    }
+}
 
 .start-about-content_heading{
     width: 29.02vw;
@@ -609,6 +645,16 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
+
+    .start-about-content_heading{
+        text-align: center;
+        font-size: 7.79vw;
+        width: 90.46vw;
+        height: 19.34vw;
+        margin-bottom: 7.79vw;
+    }
+}
 
 .start-about-content_subhead_1{
     width: 33.73vw;
@@ -630,6 +676,18 @@ margin-bottom: 1.88vw;
         height: 12.39vw;
         font-size: 1.94vw;
         margin-bottom: 3.23vw;
+    }
+}
+
+@media screen and (max-width: 321px) {
+
+    .start-about-content_subhead_1{
+        
+        width: 84.11vw;
+        height: 44.86vw;
+        font-size: 4.67vw;
+        margin: 0 auto 6.85vw auto;
+
     }
 }
 
@@ -656,7 +714,16 @@ margin-bottom: 1.88vw;
     }
 }
 
+@media screen and (max-width: 321px) {
 
+    .start-about-content_subhead_2{
+        
+        width: 84.11vw;
+        height: 74.45vw;
+        font-size: 4.67vw;
+        margin: 0 auto 0 auto;
+    }
+}
 /*====================================================pets=================================================*/
 
 
