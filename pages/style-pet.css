@@ -136,6 +136,7 @@ p {
     font-size: 1.18vw;
     line-height: 160%;
     color: #545454;
+    
 }
 
 @media screen and (max-width: 769px) {
@@ -154,8 +155,9 @@ p {
     text-decoration-thickness: 0.24vw;
 }
 
-#our-pets-header-nav:hover{
-    font-weight: 700;
+.pets-header-nav:hover{
+    opacity: 0.7;
+
 }
 
 .our-pets-pet-1280{
