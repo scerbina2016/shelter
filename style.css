@@ -1891,6 +1891,15 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-1280{
+
+        height: 252.02vw;
+    }
+
+}
+
 .footer-content{
     display: flex;
     flex-direction: row;
@@ -1913,6 +1922,17 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content{
+        flex-direction: column;
+        width: 93.45vw;
+        height: 252.02vw;
+        margin: 9.35vw auto 12.46 auto;
+    }
+
+}
+
 .footer-content-contacts{
     display: flex;
     flex-direction: column;
@@ -1931,13 +1951,23 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-contacts{
+        width: 86.6vw;
+        height: 64.8vw;
+        margin: 0 auto 12.46vw auto;
+    }
+
+}
+
 .footer-content-contacts-title{
     height: 7.06vw;
     width: 26.27vw;
     font-family: Georgia;
     font-size: 2.76vw;
     font-weight: 400;
-    line-height: 3.53vw;
+    line-height: 130%;
     letter-spacing: 0.06em;
     text-align: left;
     
@@ -1949,12 +1979,22 @@ margin:0 auto 4.71vw auto;
         width: 35.87vw;
         height: 11.62vw;
         font-size: 4.51vw;
-        line-height: 130%;
         margin: 0 0 5.16vw 0;
     }
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-contacts-title{
+        width: 86.6vw;
+        height: 19.94vw;
+        font-size: 7.79vw;
+        text-align: center;
+        margin: 0 auto 12.46vw auto;
+    }
+
+}
 
 .footer-content-contacts-mail{
     display: flex;
@@ -1987,6 +2027,17 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-contacts-mail{
+        width: 78.19vw;
+        height: 9.97vw;
+        font-size: 6.23vw;
+        line-height: 7.17vw;
+        margin: 0 auto 12.46vw auto;
+    }
+
+}
 
 .mail-ico{
     height: 2.04vw;
@@ -2008,6 +2059,15 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .mail-ico{
+        width: 12.46vw;
+        height: 9.97vw;
+        margin: auto 5.32vw auto 0;
+    }
+
+}
 
 .footer-content-contacts-fone{
     display: flex;
@@ -2038,6 +2098,17 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-contacts-fone{
+        width: 74.45vw;
+        height: 9.97vw;
+        font-size: 6.23vw;
+        line-height: 7.16vw;
+        margin: 0 auto 0 auto;
+    }
+
+}
 
 .fone-ico{
     height: 2.51vw;
@@ -2059,6 +2130,15 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .fone-ico{
+        width: 12.46vw;
+        height: 9.97vw;
+        margin: auto 5.23vw auto 0;
+    }
+
+}
 
 .footer-content-locations{
     display: flex;
@@ -2076,6 +2156,16 @@ margin:0 auto 4.71vw auto;
         width: 35.87vw;
         height: 30.19vw;
         margin: 0 auto 0 0;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .footer-content-locations{
+        width: 93.46vw;
+        height: 69.16vw;
+        margin: 0 auto 0 auto;
     }
 
 }
@@ -2104,9 +2194,23 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-locations-title{
+        width: 84.11vw;
+        height: 19.94vw;
+        font-size: 7.79vw;
+        line-height: 130%;
+        text-align: center;
+        margin: 0 auto 12.46vw auto;
+    }
+
+}
+
 .footer-content-locations-boston{
     display: flex;
     flex-direction: row;
+    
     justify-content: flex-start;
     height: 3.61vw;
     width: 23.69vw;
@@ -2132,7 +2236,17 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
 
+    .footer-content-locations-boston{
+        width: 93.46vw;
+        height: 14.33vw;
+        font-size: 6.23vw;
+        line-height: 7.17vw;
+        margin: 0 0 11.46vw 0;
+    }
+
+}
 
 .boston-ico{
     height: 2.98vw;
@@ -2151,6 +2265,16 @@ margin:0 auto 4.71vw auto;
         width: 7.2vw;
         height: 5.50vw;
         margin: 0 2.2vw 0 1vw;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .boston-ico{
+        width: 14.5vw;/*======================*/
+        height: 11.06vw;
+        margin: auto 2.2vw auto 2vw;
     }
 
 }
@@ -2186,6 +2310,17 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .footer-content-locations-london{
+        width: 93.46vw;
+        height: 14.33vw;
+        font-size: 6.23vw;
+        line-height: 7.17vw;
+        margin: 0 0 0 0;
+    }
+
+}
 
 .london-ico{
     height: 2.51vw;
@@ -2208,6 +2343,16 @@ margin:0 auto 4.71vw auto;
 
 }
 
+@media screen and (max-width: 321px) {
+
+    .london-ico{
+        width: 10.5vw;/*14.5*/
+        height: 11.06vw;
+        margin: auto 6.23vw auto 0;
+    }
+
+}
+
 .footer-content-puppy{
     height: 30.78vw;
     width: 30.53vw;
@@ -2222,6 +2367,16 @@ margin:0 auto 4.71vw auto;
         width: 38.71vw;
         height: 40vw;
         margin: 7.9vw auto 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .footer-content-puppy{
+        width: 81vw;
+        height: 84.5vw;
+        margin: 12.46vw auto 0 auto;
     }
 
 }
