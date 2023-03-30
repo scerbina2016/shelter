@@ -490,10 +490,20 @@ p {
 }
 
 .button-paginator:hover{
-    font-size: 2.35vw;
+    font-size: 2vw;
     border-width: 0.31vw;
 }
 @media screen and (max-width: 769px) {
+
+    .button-paginator:hover{
+        font-size: 3.2vw;
+        border-width: 0.62vw;
+    }
+    
+
+}
+
+@media screen and (max-width: 321px) {
 
     .button-paginator:hover{
         font-size: 8vw;

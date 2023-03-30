@@ -937,17 +937,19 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 
 
 .slider-button-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     height: 4.08vw;
     width: 4.08vw;
     border-radius: 7.84vw;
-    background-image: url('./images/button_arrow_left.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-/*FDDCC4*/
-    cursor: pointer;
+    border: 0.16vw solid #F1CDB3;
+    font-size: 1.5vw;
     margin-top: 15.06vw;
     margin-right: 4.16vw;
+
 
 }
 
@@ -959,6 +961,8 @@ margin: 0 31.37vw 4.71vw 31.37vw;
         height: 6.71vw;
         border-radius: 12.86vw;
         margin: auto 0 auto 0;
+        font-size: 2.46vw;
+        border: 0.26vw solid #F1CDB3;
     }
 }
 
@@ -970,11 +974,13 @@ margin: 0 31.37vw 4.71vw 31.37vw;
         height: 16.2vw;
         border-radius: 12.86vw;
         margin: auto 0 auto 0;
+        font-size: 5.90vw;
+        border: 0.62vw solid #F1CDB3;
     }
 }
 
 .slider-button-left:hover{
-    background-image: url('./images/button_arrow_left_hover.png');
+    background-color: #F1CDB3;
 }
 
 .slider-card{
@@ -1034,19 +1040,36 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 }
 
 .slider-button-right{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     height: 4.08vw;
     width: 4.08vw;
     border-radius: 7.84vw;
+    border: 0.16vw solid #F1CDB3;
+    font-size: 1.5vw;
+    margin-top: 15.06vw;
+    margin-left: 5.16vw;
+
+
+
+
+    /*height: 4.08vw;
+    width: 4.08vw;
+    border-radius: 7.84vw;
     background-image: url('./images/button_arrow_right.png');
-/*FDDCC4*/
+/*FDDCC4
     cursor: pointer;
     margin-top: 15.06vw;
     margin-left: 5.16vw;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
-
+/*=====================================*/
 @media screen and (max-width: 769px) {
 
     .slider-button-right{
@@ -1055,7 +1078,8 @@ margin: 0 31.37vw 4.71vw 31.37vw;
         height: 6.71vw;
         border-radius: 12.86vw;
         margin: auto 0 auto 0;
-
+        font-size: 2.46vw;
+        border: 0.26vw solid #F1CDB3;
     }
 }
 
@@ -1067,11 +1091,13 @@ margin: 0 31.37vw 4.71vw 31.37vw;
         height: 16.2vw;
         border-radius: 12.86vw;
         margin: auto 0 auto 0;
+        font-size: 5.90vw;
+        border: 0.62vw solid #F1CDB3;
     }
 }
 
 .slider-button-right:hover{
-    background-image: url('./images/button_arrow_right_hover.png');
+    background-color: #F1CDB3;
 }  
 
 .slider-card-foto{
@@ -1148,14 +1174,22 @@ margin: 2.35vw 7.69vw 1.96vw 7.69vw;
 }
 
 .slider-card-button{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+
 height: 4.47vw;
 width: 16.99vw;
-background-image: url('./images/slider-card-button.png');
+border: 2px solid #F1CDB3;
+/*background-image: url('./images/slider-card-button.png');*/
 cursor: pointer;
+border: 0.16vw solid #F1CDB3;
+border-radius: 7.84vw;
+    font-size: 1.6vw;
 margin: 1.96vw 3.22vw 2.35vw 3.22vw;
-background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 
 @media screen and (max-width: 769px) {
@@ -1165,7 +1199,8 @@ background-position: center;
         width: 24.13vw;
         height: 6.71vw;
         margin: auto;
-
+        border: 0.26vw solid #F1CDB3;
+        font-size: 2.19vw;
     }
 }
 
@@ -1176,12 +1211,13 @@ background-position: center;
         width: 58.26vw;
         height: 16.2vw;
         margin: auto;
-
+        border: 0.62vw solid #F1CDB3;
+        font-size: 5.3vw;
     }
 }
 
 .slider-card-button:hover{
-    background-image: url('./images/slider-card-button-hover.png');
+    background-color: #F1CDB3;
 
 }
 
