@@ -839,7 +839,7 @@ cursor: pointer;
     /* Heading */
 
 
-width: 31.37vw;
+width: 35.37vw;/*31.37*/
 height: 7.06vw;
 
 
@@ -865,7 +865,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 
     .start-pets-contetnt-heading{
 
-        width: 51.61vw;
+        width: 54.61vw;
         height: 11.61vw;
         margin: 0 auto 7.74vw auto;
         font-size: 4.52vw;
@@ -2375,7 +2375,7 @@ margin:0 auto 4.71vw auto;
 
     .footer-content-puppy{
         width: 81vw;
-        height: 84.5vw;
+        height: 85.5vw;
         margin: 12.46vw auto 0 auto;
     }
 
