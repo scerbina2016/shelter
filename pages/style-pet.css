@@ -1,173 +1,324 @@
 :root{box-sizing: border-box;
-
     margin: 0px;
-    padding: 0px;
-    
-    }
+    padding: 0px;    
+}
 
     *,
     ::before,
     ::after{box-sizing: inherit;}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+h1{margin: 0;}
+h2{margin: 0;}
 .our-pets-1280{
-    display: grid;
-    grid-template-columns: 1fr 1263px 1fr;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .our-pets-header-1280{
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    height: 60px;
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-right: 31px;
-    grid-column: 2/3;
+    width: 94.18vw;
+    height: 4.71vw;
+    margin-top: 2.35vw;
+    margin-left: 2.51vw;
+    margin-right: 2.43vw;
+    /*grid-column: 2/3;*/
+}
+.header-nav-dropdown-1280{
+    display: none;
+}
+
+
+@media screen and (max-width: 1279px) {
+    .our-pets-header-1280{
+
+        height: 7.76vw;/*4.7vw 7.76*/
+        width: 94.12vw;
+        margin-top: 3.88vw;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-pets-header-1280{
+
+        height: 18.69vw;/*4.7vw 7.76*/
+        /*width: 100%;/*87.23*/
+        margin: 9.35vw auto 18.69vw auto;/*right 6.23*/
+
+    }
 }
 
 .our-pets-header-logo-1280{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 570px;
+    margin-right: 42.70vw;/*55.49vw;*/
     color: #545454;
-
 }
+
+@media screen and (max-width: 1279px) {
+    .our-pets-header-logo-1280{
+
+        margin-right: 10vw;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-pets-header-logo-1280{
+        width: 60.32vw;/*57.32*/
+        height: 18.69vw;
+        margin-right: 22vw;/*20.56*/
+
+    }
+}
+
+.hed-hov:hover{
+   color:black;
+}
+
 .our-pets-header-logo-link-1280{
     text-decoration: none;
 }
 
 .our-pets-header-logo-title-1280 {
     margin: 0;
-    width: 190px;
-    height: 35px;
-    left: 0px;
-    top: calc(50% - 35px/2 - 12.5px);
+    width: 17.06vw;
+    height: 2.76vw;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2.51vw;
     line-height: 110%;
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
     color: #545454; 
 }
-/* #545454;*/
 
+@media screen and (max-width: 1279px) {
 
+    .our-pets-header-logo-title-1280{
+        font-size: 4.14vw;
+        width: 24.58vw;
+        height: 4.4vw;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-header-logo-title-1280{
+        font-size: 9.97vw;
+        width: 100%;
+        height: 10.9vw;
+    }
+    
+}
 
 .our-pets-header-logo-subtitle-1280{
-margin-left: 4px;
-margin-top: 10px;
-margin-bottom: 0;
-margin-right: 0;
-
-width: 190px;
-height: 15px;
-left: 4px;
-top: calc(50% - 15px/2 + 22.5px);
-
-/* logo_subtitle */
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 15px;
-/* identical to box height */
-display: flex;
-align-items: center;
-letter-spacing: 0.1em;
-
-/* color-light-xl */
-color: #545454;
+    margin-left: 0.31vw;
+    margin-top: 0.78vw;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 17.06vw;
+    height: 1.18vw;
+    /*left: 0.31vw;
+    top: calc(50% - 1.18vw/2 + 22.0.39vw);*/
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.02vw;
+    line-height: 1.18vw;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #545454;
 }
+
+@media screen and (max-width: 1279px) {
+
+    .our-pets-header-logo-subtitle-1280{
+        font-size: 1.68vw;
+        width: 24.58vw;
+        height: 1.93vw;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-header-logo-subtitle-1280{
+        font-size: 4.05vw;
+        width: 100%;/*55.76*/
+        height: 4.67vw;
+    }
+    
+}
+
 
 .our-pets-header-nav-1280{
-    width: 435px;
- display: flex;
- flex-direction: row;  
- flex-wrap: wrap;
- align-content: center;
- justify-content: space-between;
-/* About the shelter */
-
-
-/* paragraph-l */
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-/* identical to box height, or 24px */
-
-/* color-light-s */
-color: #545454;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    width: 42.76vw;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.18vw;
+    line-height: 160%;
+    color: #545454;
+    
 }
+
+@media screen and (max-width: 1279px) {
+
+    .our-pets-header-nav-1280{
+        font-size: 1.95vw;
+        width: 57.68vw;
+       
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-header-nav-1280{
+        display: none;  
+    }
+
+    .header-nav-dropdown-1280{
+        display: flex;
+    }
+    .our-pets-header-nav-dropdown-ico{
+        margin-right: 2vw;
+        width: 9.35vw;
+        height: 7.35vw;
+        background-image: url('../images/icons/burger-close-black.png');
+        background-position: center;
+        background-size:cover;
+        cursor: pointer;
+
+
+    }
+}
+
 .our-pets-header-nav-pets-1280{
     text-decoration: underline;
     text-decoration-color: #FDDCC4;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 0.24vw;
 }
 
-#our-pets-header-nav:hover{
-    font-weight: 700;
+.pets-header-nav:hover{
+    color:black
+
 }
 
 .our-pets-pet-1280{
     display: flex;
     flex-direction: column;
-    height: 1342px;
-    width: 1263px;
-    border: 1px solid blue;
+    height: 115.25vw;
+    width: 100%;/*99vw;*/
     grid-column: 2/3;
     background: #F6F6F6;
 }
 
-.our-pets-pet-right{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    background: #F6F6F6;
-    height: 1342px;
+@media screen and (max-width: 1279px) {
+
+    .our-pets-pet-1280{
+        
+        height: 223.61vw;
+    }
+    
 }
 
-.our-pets-pet-left{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background: #F6F6F6;
-    height: 1342px;
+@media screen and (max-width: 768px) {
+
+    .our-pets-pet-1280{
+        
+        height: 513.7vw;
+
+    }
+    
 }
+
 
 .our-pets-pet-content {
     display: flex;
     flex-direction: column;
-    height: 1162px;
-    width: 1200px;
-    border: 1px solid red;
-    margin: 80px 32px 100px 31px;
+    height: 91.14vw;
+    width: 94.18vw;
+    margin: 6.27vw 2.51vw 7.84vw 2.43vw;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .our-pets-pet-content{
+        width: 91.35vw;
+        height: 206.84vw;
+       margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-pet-content{
+        width: 93.46vw;
+        height: 487.54vw;
+       margin: auto;
+    }
+    
 }
 
 .our-pets-pet-content-heading{
-    height: 90px;
-    width: 400px;
+    height: 7.06vw;
+    width: 34.37vw;
     font-family: Georgia;
-    font-size: 35px;
+    font-size: 2.76vw;
     font-weight: 400;
-    line-height: 45px;
+    line-height: 130%;
     letter-spacing: 0.06em;
     text-align: center;
-margin: 0 400px 45px 400px;
+    margin: 0 31.37vw 3.53vw 31.37vw;
+    color: #545454;
+}
 
+@media screen and (max-width: 1279px) {
+
+    .our-pets-pet-content-heading{
+        width: 55.62vw;
+        height: 11.62vw;
+        font-size: 4.52vw;
+       
+        margin: 2.58vw auto 3.87vw auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-pet-content-heading{
+        width: 93.46vw;
+        height: 19.34vw;
+        font-size: 7.79vw;
+    
+        margin: 13.08vw auto 13.08vw auto;
+    }
+    
 }
 
 .our-pets-pet-content-card-container{
@@ -175,16 +326,66 @@ margin: 0 400px 45px 400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 930px;
-    width: 1200px;
-    border: 1px solid green;
+    height: 92.35vw;
+    width: 94.18vw;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .our-pets-pet-content-card-container{
+        width: 74.84vw;
+        height: 176.13vw;
+        margin: 0 auto 5.16vw auto;
+    }
+    .slider-card-7{
+        display: none;
+    }
+    .slider-card-8{
+        display: none;
+    }
+    #pet-card-3{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-pet-content-card-container{
+        width: 84.11vw;
+        height: 425.23vw;
+        margin: 13.08 auto 13.08vw auto;
+    }
+
+    .slider-card-4{
+        display: none;
+    }
+    .slider-card-5{
+        display: none;
+    }
+    .slider-card-6{
+        display: none;
+    }
+
+
+
+
+
+    .slider-card-7{
+        display: none;
+    }
+    .slider-card-8{
+        display: none;
+    }
+    #pet-card-3{
+        display: flex;
+    }
+
 
 }
-#pet-card{
+
+.pet-card{
     margin: 0;
     background: #FAFAFA;
-    
-
 }
 .slider-foto-4{
     background-image: url('../images/pets/pets-sophia.png');
@@ -216,30 +417,127 @@ margin: 0 400px 45px 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 52px;
-    width: 340px;
-    border: 1px solid orangered;
-    margin:45px 430px 0 430px;
+    justify-content: space-between;
+    height: 4.08vw;
+    width: 26.67vw;
+    margin:0 33.73vw 0 33.73vw;/*top 3.53vw*/
+}
+
+@media screen and (max-width: 1279px) {
+
+    .our-pets-pet-content-navigation{
+        width: 43.87vw;
+        height: 6.71vw;
+        margin: 0 auto auto auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .our-pets-pet-content-navigation{
+        width: 93.46vw;
+        height: 16.2vw;
+        margin: 0 auto auto auto;
+    }
+    
+}
+
+.button-paginator{
+    height: 4.08vw;
+    width: 4.08vw;
+    border: 0.16vw solid #CDCDCD;
+    border-radius: 7.84vw;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.57vw;
+    line-height: 115%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .button-paginator{
+        width: 6.71vw;
+        height: 6.71vw;
+        font-size: 2.57vw;
+        line-height: 115%;
+        border: 0.26vw solid #CDCDCD;
+        margin: auto;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .button-paginator{
+        width: 16.2vw;
+        height: 16.2vw;
+        font-size: 6.32vw;
+        line-height: 115%;
+        border: 0.26vw solid #CDCDCD;
+        margin: auto;
+    }
+    
+
+}
+
+.button-paginator:hover{
+    font-size: 2vw;
+    border-width: 0.31vw;
+}
+@media screen and (max-width: 1279px) {
+
+    .button-paginator:hover{
+        font-size: 3.2vw;
+        border-width: 0.62vw;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .button-paginator:hover{
+        font-size: 8vw;
+        border-width: 0.62vw;
+    }
+    
+
+}
+
+.button-paginator:active{
+    font-size: 2.35vw;
+    border-width: 0.31vw;
+    opacity: 0.5;
+}
+
+.paginator-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-paginator-center{
+    color:#292929;
+    background-color:#F1CDB3 ;
+    border: 0.16vw solid #F1CDB3;
+}
+
+.button-paginator-inactive-right-1{
+    color:#292929;
+    border: 0.16vw solid #F1CDB3;
+}
+
+.button-paginator-inactive-right-2{
+    color:#292929;
+    border: 0.16vw solid #F1CDB3;
 }
 
 
-
-
-/*===========================================footer's start==============================================*/
-.our-pets-footer-left{
-    height: 350px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url('../images/start-footer-background-rotate.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.our-pets-footer-right{
-    height: 350px;
-    grid-column: 3/4;
-    grid-row: 3/4;
-    background-image: url('../images/start-footer-background-rotate.png');
-    background-position: center;
-    background-size: cover;
-}
