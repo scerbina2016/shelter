@@ -959,7 +959,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     font-size: 1.5vw;
     margin-top: 15.06vw;
     margin-right: 4.16vw;
-
+    cursor: pointer;
 
 }
 
@@ -1063,21 +1063,8 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     font-size: 1.5vw;
     margin-top: 15.06vw;
     margin-left: 5.16vw;
-
-
-
-
-    /*height: 4.08vw;
-    width: 4.08vw;
-    border-radius: 7.84vw;
-    background-image: url('./images/button_arrow_right.png');
-/*FDDCC4
     cursor: pointer;
-    margin-top: 15.06vw;
-    margin-left: 5.16vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;*/
+
 }
 /*=====================================*/
 @media screen and (max-width: 769px) {
