@@ -1,22 +1,62 @@
 let drop = document.getElementById('nav-dropdown');
-let dropIco = document.getElementById('drop-ico');
+let closeBurger = document.getElementById('dropdown-burger-close');
+let dropDownBlock = document.getElementById('dropdown-open');
+let menuOpened = false;
 
-let openDrop = false;
-
-drop.addEventListener('click',() =>{
-    openDrop = !openDrop;
-    if(openDrop){
-    drop.className = 'header-nav-dropdown-open';
-    
-    drop.style.zIndex = '2';
-    drop.style.backgroundImage = 'url(./images/start-screen-background2.jpg)';
-    drop.style.backgroundPosition = 'right';
-    dropIco.style.marginTop = '10vw';
-    drop.style.color ='white';
+let smallOpen = () => {
+    if( window. innerWidth > 321) {
+        dropDownBlock.style.width = '320px';
     } else {
-        drop.className = 'header-nav-dropdown-1280';  
-        drop.style.backgroundImage = 'url(./images/start-screen-background2.jpg)';
-        dropIco.style.marginTop = '0';
+        dropDownBlock.style.width = '100%';
+    }
+}
+
+closeBurger.addEventListener('click',()=> {
+    menuOpened = false;
+    console.log('in close burger'+menuOpened);
+    dropDownBlock.style.width = '0px';
+});
+
+dropDownBlock.addEventListener('click',()=> {
+    menuOpened = false;
+    console.log('in close '+menuOpened);
+    dropDownBlock.style.width = '0px';
+});
+
+window.addEventListener('resize',()=>{
+    console.log('in resize  '+menuOpened);
+    if(menuOpened){
+        smallOpen();
     }
 });
-//background-image: url('./images/icons/burger-close.png');
+
+drop.addEventListener('click',() =>{
+    menuOpened = true;
+    console.log('in open  ' + menuOpened)
+    smallOpen();
+});
+
+
+
+/*window.addEventListener('resize',()=>{
+    console.log('in resize  '+menuOpened);
+    if(menuOpened){
+        if( window. innerWidth > 321) {
+            dropDownBlock.style.width = '320px';
+        } else {
+            dropDownBlock.style.width = '100%';
+        }
+    }
+});
+
+drop.addEventListener('click',() =>{
+    menuOpened = true;
+    console.log('in open  ' + menuOpened)
+    if( window. innerWidth > 321) {
+        dropDownBlock.style.width = '320px';
+    } else {
+        dropDownBlock.style.width = '100%';
+    }
+});*/
+
+
