@@ -2456,10 +2456,14 @@ margin:0 auto 4.71vw auto;
     transition: width 1s;
 
 }
-
+.header-nav-open{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
-   
+    .header-nav-open{
+        display: block;
+    }
     .start-screen-dropdown-open{
         /*display: block;*/
         position: absolute;
@@ -2525,7 +2529,9 @@ margin:0 auto 4.71vw auto;
 }
 
 @media screen and (max-width: 321px) {
-
+    .header-nav-open{
+        display: block;
+    }
     .start-screen-dropdown-open{
         /*display: block;
         position: absolute;
