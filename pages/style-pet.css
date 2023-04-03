@@ -204,16 +204,28 @@ h2{margin: 0;}
         display: flex;
     }
     .our-pets-header-nav-dropdown-ico{
+        
         margin-right: 2vw;
         width: 9.35vw;
         height: 7.35vw;
-        background-image: url('../images/icons/burger-close-black.png');
+        /*background-image: url('../images/icons/burger-close-black.png');
         background-position: center;
-        background-size:cover;
+        background-size:cover;*/
         cursor: pointer;
-
-
     }
+
+    .line-3{
+        border-top:0.63vw solid #000000 ;
+        border-bottom: 0.63vw solid #000000;
+    }
+    
+    .line-4{
+        border-bottom: 0.63vw solid #000000;
+    }
+
+}
+.our-pets-header-nav-dropdown-ico{
+    transition-duration: 0.5s;
 }
 
 .our-pets-header-nav-pets-1280{

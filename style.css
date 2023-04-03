@@ -131,6 +131,7 @@ h2{margin: 0;}
         /*cursor: pointer;*/
     }
     .header-nav-dropdown-ico{
+        transition-duration: 0.5s;
         margin-right: 2vw;
         margin-left: auto;
         width: 9.35vw;
@@ -2453,8 +2454,10 @@ margin:0 auto 4.71vw auto;
 .start-screen-dropdown-open{
     width: 0px;
     height: 0px;
-    transition: width 1s;
-
+    transition: width 0.5s;
+}
+#dropdown-burger-close{
+    transition-duration: 0.5s;
 }
 .header-nav-open{
     display: none;
@@ -2470,7 +2473,7 @@ margin:0 auto 4.71vw auto;
         top:0;
         right: 0;
         width: 0px;/*320px*/
-        height: 823px;/*256.39vw 823px*/
+        height: 100vh;/* 823px*/
         background: #292929;
 
 
@@ -2500,7 +2503,7 @@ margin:0 auto 4.71vw auto;
     
         margin: auto 0 auto auto;
         cursor: pointer;
-        background-image: url('images/icons/burger-open.png');
+        background-image: url('images/icons/burger-close.png');
         background-position: center;
         background-size: cover;
     
