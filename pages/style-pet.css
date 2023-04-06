@@ -365,7 +365,7 @@ h2{margin: 0;}
     .our-pets-pet-content-card-container{
         width: 84.11vw;
         height: 425.23vw;
-        margin: 13.08 auto 13.08vw auto;
+        margin: 13.08vw auto 13.08vw auto;/*==============================*/
     }
 
     .slider-card-4{

@@ -1,4 +1,15 @@
-export default petsBase = [
+const petsBase = [
+    {
+        "name": "Katrine",
+        "img": "./images/pets/pets-katrine.png",
+        "type": "Cat",
+        "breed": "British Shorthair",
+        "description": "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
+        "age": "6 months",
+        "inoculations": ["panleukopenia"],
+        "diseases": ["none"],
+        "parasites": ["none"]
+      },
     {
       "name": "Jennifer",
       "img": "./images/pets/pets-jennifer.png",
@@ -43,17 +54,7 @@ export default petsBase = [
       "diseases": ["none"],
       "parasites": ["none"]
     },
-    {
-      "name": "Katrine",
-      "img": "./images/pets/pets-katrine.png",
-      "type": "Cat",
-      "breed": "British Shorthair",
-      "description": "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
-      "age": "6 months",
-      "inoculations": ["panleukopenia"],
-      "diseases": ["none"],
-      "parasites": ["none"]
-    },
+    
     {
       "name": "Timmy",
       "img": "./images/pets/pets-timmy.png",
@@ -88,3 +89,5 @@ export default petsBase = [
       "parasites": ["lice", "fleas"]
     }
   ]
+
+  export default petsBase;
