@@ -7,7 +7,8 @@ import petsBase from "./pets-base.js";
 </div>*/
 //======================= fill card context =============================================
 
-
+const petsModalWin = document.getElementById('pets-modal-container');
+const modalFoto = document.getElementById('modal-foto');
 for (let i=1; i <= petsBase.length; i++){
     console.log(i);
   document.getElementById(`foto-${i}`).style.backgroundImage = `url(${petsBase[i-1].img})`;  
@@ -15,6 +16,12 @@ for (let i=1; i <= petsBase.length; i++){
 
   document.getElementById(`foto321-${i}`).style.backgroundImage = `url(${petsBase[i-1].img})`;  
   document.getElementById(`name321-${i}`).innerText = `${petsBase[i-1].name}`;  
+
+  document.getElementById(`info-button-${i}`).addEventListener('click',()=>{
+
+    petsModalWin.style.display = 'flex';
+    modalFoto.style.backgroundImage = `url(${petsBase[i-1].img})`;
+  })
 }
 console.log('length => '+petsBase.length);
 
@@ -22,7 +29,7 @@ console.log('length => '+petsBase.length);
 
 
 
-
+/*
 //======================================dropdown menu begining ==================================
 
 let drop = document.getElementById('nav-dropdown');
@@ -71,6 +78,7 @@ drop.addEventListener('click',() =>{
 });
 
 //====================================== dropdown menu end ===========================================
+*/
 let countClick = 0;
 const sliderLeftButton = document.getElementById('slider-left-button');
 const sliderRightButton = document.getElementById('slider-right-button');
@@ -139,3 +147,12 @@ window.addEventListener('resize',()=>{
     else
          scroller321.scrollTo({left: scroller321.scrollWidth, top: 0, behavior:'auto'});
  }
+
+//==========================================modal block=====================================
+
+const modalCloseBut = document.getElementById('pets-modal-close-but');
+
+modalCloseBut.addEventListener('click',()=>{
+    petsModalWin.style.display = 'none';
+})
+

@@ -2639,3 +2639,56 @@ margin:0 auto 4.71vw auto;
     width: 0px;
     height: 0px;
   }
+
+  /*====================================modal======================================================*/
+
+  .pets-modal-block{
+    display: none;
+    width: 98vw;
+    height: 100vh;
+    /*min-height: 80vw;*/
+    position: fixed;
+    /*left: 10%;*/ top: 0; /*right: 10%; bottom: 10%;*/
+    /*justify-content: center;
+    align-items: center;*/
+    background-color: rgba(41, 41, 41, 0.6);
+    /*opacity: 0.6;/*0.6*/
+    z-index: 4;
+    
+
+  }
+
+.pets-modal-block-container{
+
+    width: 79vw;
+    height: 75vh;
+    border: 1px solid red;
+    
+    margin: auto;
+    opacity: 1;
+    z-index: 5;
+
+}
+
+.modal-close-button{
+
+    width: 3vw;
+    height: 3vw;
+    background-color: red;
+    margin-left: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-content{
+    width: 76vw;
+    height: 69vh;
+    background-color: #FAFAFA;
+}
+.modal-foto-block{
+    width: 55%;
+    height: 100%;
+    border: 1px solid green;
+    background-position: center;
+    background-size: cover;
+}
