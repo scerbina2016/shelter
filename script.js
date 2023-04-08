@@ -9,18 +9,51 @@ import petsBase from "./pets-base.js";
 
 const petsModalWin = document.getElementById('pets-modal-container');
 const modalFoto = document.getElementById('modal-foto');
+const modalName = document.getElementById('modal-name');
+const modalTypeBreed = document.getElementById('modal-type-breed');
+const modalDescription = document.getElementById('modal-description');
+const modalAge = document.getElementById('modal-age');
+const modalInocul = document.getElementById('modal-inocul');
+const modalDiseases = document.getElementById('modal-diseases');
+const modalParasites = document.getElementById('modal-parasites');
+
+
 for (let i=1; i <= petsBase.length; i++){
     console.log(i);
   document.getElementById(`foto-${i}`).style.backgroundImage = `url(${petsBase[i-1].img})`;  
   document.getElementById(`name-${i}`).innerText = `${petsBase[i-1].name}`;  
 
+if(document.title === 'Shelter'){
   document.getElementById(`foto321-${i}`).style.backgroundImage = `url(${petsBase[i-1].img})`;  
   document.getElementById(`name321-${i}`).innerText = `${petsBase[i-1].name}`;  
 
+  document.getElementById(`info321-button-${i}`).addEventListener('click',()=>{
+
+    petsModalWin.style.display = 'flex';
+    modalFoto.style.backgroundImage = `url(${petsBase[i-1].img})`;
+    modalName.innerText = petsBase[i-1].name
+    modalTypeBreed.innerText = `${petsBase[i-1].type} - ${petsBase[i-1].breed}`;
+    modalDescription.innerText = petsBase[i-1].description;
+    modalAge.innerHTML = `<span class="list-text"> <b>Age:</b> ${petsBase[i-1].age}</span>`;
+    modalInocul.innerHTML = `<span class="list-text"><b>Inoculations:</b> ${petsBase[i-1].inoculations}</span>`;
+    modalDiseases.innerHTML = `<span class="list-text"><b>Diseases:</b> ${petsBase[i-1].diseases}</span>`;
+    modalParasites.innerHTML = `<span class="list-text"><b>Parasites:</b> ${petsBase[i-1].parasites}</span>`;
+
+  })
+
+}
   document.getElementById(`info-button-${i}`).addEventListener('click',()=>{
 
     petsModalWin.style.display = 'flex';
     modalFoto.style.backgroundImage = `url(${petsBase[i-1].img})`;
+    modalName.innerText = petsBase[i-1].name
+    modalTypeBreed.innerText = `${petsBase[i-1].type} - ${petsBase[i-1].breed}`;
+    modalDescription.innerText = petsBase[i-1].description;
+    modalAge.innerHTML = `<span class="list-text"> <b>Age:</b> ${petsBase[i-1].age}</span>`;
+    modalInocul.innerHTML = `<span class="list-text"><b>Inoculations:</b> ${petsBase[i-1].inoculations}</span>`;
+    modalDiseases.innerHTML = `<span class="list-text"><b>Diseases:</b> ${petsBase[i-1].diseases}</span>`;
+    modalParasites.innerHTML = `<span class="list-text"><b>Parasites:</b> ${petsBase[i-1].parasites}</span>`;
+
   })
 }
 console.log('length => '+petsBase.length);
@@ -29,7 +62,7 @@ console.log('length => '+petsBase.length);
 
 
 
-/*
+
 //======================================dropdown menu begining ==================================
 
 let drop = document.getElementById('nav-dropdown');
@@ -78,7 +111,7 @@ drop.addEventListener('click',() =>{
 });
 
 //====================================== dropdown menu end ===========================================
-*/
+if(document.title === 'Shelter'){
 let countClick = 0;
 const sliderLeftButton = document.getElementById('slider-left-button');
 const sliderRightButton = document.getElementById('slider-right-button');
@@ -91,24 +124,42 @@ let scrollerWidth = scroller.clientWidth;
 window.addEventListener('resize',()=>{ 
     scrollerWidth = scroller.clientWidth;
     itemWidth = card1.clientWidth;
+    console.log('title => '+ document.title);
+
 });
 
 const nextBtn = document.getElementById('slider-left-button');
 const prevBtn = document.getElementById('slider-right-button');
 
-nextBtn.addEventListener('click', scrollToPrevItem);
+nextBtn.addEventListener('click', scrollToPrevItem);/* убрать 321*/
 prevBtn.addEventListener('click', scrollToNextItem);
 
 
 function scrollToNextItem() {
+    console.log('=========================================');
     console.log('scrollLeft => '+scroller.scrollLeft);
-    if(scroller.scrollLeft < ((scroller.scrollWidth/2+itemWidth )- itemWidth))
-        scroller.scrollBy({left: scrollerWidth, top: 0, behavior:'smooth'});
-    else
+    console.log('compare => legt mast be ' + (scroller.scrollLeft+scrollerWidth)+'<'+((scroller.scrollWidth)-scrollerWidth));
+    console.log( scroller.scrollLeft -((scroller.scrollWidth+itemWidth )- itemWidth));
+    console.log('itemWidth => '+itemWidth);
+    console.log('scrollerWidth => '+scrollerWidth);
+    console.log('win width = '+ window.innerWidth );
+    console.log('=========================================');
+    let badabum = scrollerWidth;
+    if (window.innerWidth > 1279){badabum = 100};
+    console.log('badabum = ' + badabum)
+    //if(scroller.scrollLeft < ((scroller.scrollWidth/2+itemWidth )- itemWidth))
+    //  scroller.scrollBy({left: scrollerWidth+scrollerWidth/5, top: 0, behavior:'smooth'});
+    if((scroller.scrollLeft+badabum) < ((scroller.scrollWidth)-scrollerWidth))/*/2  - itemWidth*/
+        scroller.scrollBy({left: scrollerWidth, top: 0, behavior:'smooth'})
+ else 
         scroller.scrollTo({left: 0, top: 0, behavior:'auto'});
  }
  function scrollToPrevItem() {
-    console.log('scrollLeft <= '+scroller.scrollLeft)
+    console.log('=========================================');
+    console.log('scrollRight <= '+scroller.scrollLeft)
+    console.log('itemWidth <= '+itemWidth);
+    console.log('scrollerWidth <= '+scrollerWidth);
+    console.log('=========================================');
     if(scroller.scrollLeft > 210) //!=0
     
         scroller.scrollBy({left: -scrollerWidth, top: 0, behavior:'smooth'});
@@ -147,7 +198,7 @@ window.addEventListener('resize',()=>{
     else
          scroller321.scrollTo({left: scroller321.scrollWidth, top: 0, behavior:'auto'});
  }
-
+}
 //==========================================modal block=====================================
 
 const modalCloseBut = document.getElementById('pets-modal-close-but');
@@ -155,4 +206,45 @@ const modalCloseBut = document.getElementById('pets-modal-close-but');
 modalCloseBut.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
 })
+
+//===============================================================================================
+/*
+let sliderCardArr = [];
+const sliderCards = document.querySelectorAll('.slider-card');
+
+
+
+
+for ( let i=0; i<sliderCards.length; i++){
+
+    sliderCardArr[i]=`<div class="slider-card slider-card-${i+1}" id="card-${i+1}">
+                            ${sliderCards[i].innerHTML}
+                      </div> `
+}                       
+
+let scrollerNew = document.getElementById('wrapper-carusel');
+
+console.log(' slider arr');
+console.log(sliderCardArr);
+scrollerNew.innerHTML = '';
+for (let i=0; i<sliderCardArr.length/2; i++){
+
+    scrollerNew.innerHTML += sliderCardArr[i];
+
+    document.getElementById(`info-button-${i+1}`).addEventListener('click',()=>{
+
+        petsModalWin.style.display = 'flex';
+        modalFoto.style.backgroundImage = `url(${petsBase[i].img})`;
+        modalName.innerText = petsBase[i].name
+        modalTypeBreed.innerText = `${petsBase[i].type} - ${petsBase[i].breed}`;
+        modalDescription.innerText = petsBase[i].description;
+        modalAge.innerHTML = `<span class="list-text"> <b>Age:</b> ${petsBase[i].age}</span>`;
+        modalInocul.innerHTML = `<span class="list-text"><b>Inoculations:</b> ${petsBase[i].inoculations}</span>`;
+        modalDiseases.innerHTML = `<span class="list-text"><b>Diseases:</b> ${petsBase[i].diseases}</span>`;
+        modalParasites.innerHTML = `<span class="list-text"><b>Parasites:</b> ${petsBase[i].parasites}</span>`;
+    
+      })
+
+
+}*/
 
