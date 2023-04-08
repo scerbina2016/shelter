@@ -1027,7 +1027,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     background: #FAFAFA;
     transition: all 0.5s;
     scroll-snap-align: start;
-    margin-left: 5vw
+    margin: 0 2.5vw 0 2.5vw;
 }
 
 .slider-card:hover {
@@ -2611,10 +2611,11 @@ margin:0 auto 4.71vw auto;
 .slider-wrapper{
     display: flex;
     flex-direction: row;
+    /*flex-wrap: wrap;*/
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;/*========================================================================*/
-    width: 83vw;/*===========================*/
+    width: 80vw;/*83vw===========================*/
     justify-content: space-between;
     
     
@@ -2660,35 +2661,309 @@ margin:0 auto 4.71vw auto;
 
 .pets-modal-block-container{
 
-    width: 79vw;
-    height: 75vh;
-    border: 1px solid red;
+    width: 74.67vw;
+    height: 43.3vw;
     
     margin: auto;
-    opacity: 1;
-    z-index: 5;
+    /*opacity: 1;
+    z-index: 5;*/
+}
+
+@media screen and (max-width: 1279px) {
+    .pets-modal-block-container{
+        width: 88.8vw;
+        height: 52.35vw;
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .pets-modal-block-container{
+        width: 84.42vw;
+        height: 122.43vw;
+
+    }
 
 }
 
 .modal-close-button{
-
-    width: 3vw;
-    height: 3vw;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    font-size: 0.94vw;
+    width: 4.08vw;
+    height: 4.08vw;
     margin-left: auto;
     border-radius: 50%;
+    border: 0.16vw solid #F1CDB3;
     cursor: pointer;
+}
+@media screen and (max-width: 1279px) {
+
+    .modal-close-button{
+        width: 6.77vw;
+        height: 6.77vw;
+        font-size: 1.56vw;
+        border: 0.26vw solid #F1CDB3;
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .modal-close-button{
+        width: 16.2vw;
+        height: 16.2vw;
+        font-size: 3.74vw;
+        border: 0.62vw solid #F1CDB3;
+
+    }
+
 }
 
 .modal-content{
-    width: 76vw;
-    height: 69vh;
+
+    display: flex;
+    flex-direction: row;
     background-color: #FAFAFA;
+    height: 39.22vw;
+    width: 70.59vw;
+    border-radius: 0.71vw;
+    
 }
+
+@media screen and (max-width: 1279px) {
+    
+    .modal-content{
+
+        width: 82.03vw;
+        height: 45.57vw;
+        border-radius: 1.17vw;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .modal-content{
+
+        width: 74.77vw;
+        height: 106.23vw;
+        border-radius: 2.8vw;
+    }
+
+}
+
 .modal-foto-block{
-    width: 55%;
-    height: 100%;
-    border: 1px solid green;
+    width: 39.22vw;/*39.22vw*/
+    height: 39.22vw;
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (max-width: 1279px) {
+
+    .modal-foto-block{
+
+        width: 45.57vw;/*39.22vw*/
+        height: 45.57vw;
+        
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .modal-foto-block{
+
+        display: none;
+
+    }
+
+}
+.modal-text-block{
+    display: flex;
+    flex-direction: column;
+
+    width: 27.53vw;
+    height: 28.39vw;
+    margin: 3.92vw 1.57vw auto auto;
+    font-family: Georgia;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 1279px) {
+
+    .modal-text-block{
+     
+        width: 33.85vw;
+        height: 39.45vw;
+        margin: 1.3vw 1.17vw auto auto;
+    
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .modal-text-block{
+       
+        width: 68.54vw;
+        height: 100vw;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+
+
+.modal-text-name{
+    font-family: Georgia;
+    font-size: 2.75vw;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 0.78vw;
+    color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+    .modal-text-name{
+        font-size: 4.56vw;
+        margin-bottom: 1.3vw;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .modal-text-name{
+        font-size: 10.9vw;
+        margin: 1.12vw auto 1.12vw auto;
+    }
+
+}
+
+
+.modal-text-type-breed{
+    font-family: Georgia;
+    font-size: 1.57vw;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 3.14vw;
+    color: #000000;
+}
+
+@media screen and (max-width: 1279px) {
+    .modal-text-type-breed{
+        font-size: 2.6vw;
+        margin-bottom: 2.6vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-text-type-breed{
+        font-size: 6.23vw;
+        margin-bottom: 2.6vw;
+        margin: 0 auto 3.23vw auto;
+    }
+}
+
+
+.modal-text-description{
+
+    height: 8vw;
+    width: 27.45vw;
+    margin-bottom: 3.14vw;
+    font-family: Georgia;
+    font-size: 1.17vw;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 1279px) {
+    .modal-text-description{
+        font-size: 1.69vw;
+        margin-bottom: 2.6vw;
+
+        height: 12.76vw;
+        width: 33.85vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-text-description{
+        font-size: 3.80vw;/*4.05vw*//*3.8vw*/
+        margin-bottom: 3.48vw;
+        text-align: justify;
+        height: 34.89vw;
+        width: 68.54vw;
+    }
+}
+
+.modal-text-list{
+    display: flex;
+    flex-direction: column;
+margin: 0;
+padding-left: 1.57vw;
+font-family: Georgia;
+font-size: 1.18vw;
+font-weight: 400;
+line-height: 110%;
+letter-spacing: 0.06em;
+text-align: left;
+list-style-type: disc;
+color: #F1CDB3;
+}
+
+@media screen and (max-width: 1279px) {
+    .modal-text-list{
+        font-size: 1.95vw;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-text-list{
+        font-size: 4.673vw;
+        margin-left: 2.2vw;
+        margin-top: auto;
+        /*width: 47.975vw ;
+        height: 27.102vw;*/
+    }
+}
+
+.modal-text-age,
+.modal-text-inoculations,
+.modal-text-diseases {
+    margin-bottom: 0.784vw;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .modal-text-age,
+    .modal-text-inoculations,
+    .modal-text-diseases {
+        margin-bottom: 0.651vw;
+    }
+
+}
+.list-text{
+    color: #000000;
+}
+
