@@ -1,10 +1,6 @@
 import petsBase from "./pets-base.js";
 
-/*<div class="slider-card slider-card-1" id="card-1"> 
-    <div class="slider-card-foto slider-foto-1"  id="foto-1"></div>
-    <div class="slider-card-name slider-name-1" id="name-1">Katrine</div>
-    <div class="slider-card-button slider-button-1" id="info-button-1">Learn more</div>
-</div>*/
+
 //======================= fill card context =============================================
 
 const petsModalWin = document.getElementById('pets-modal-container');
@@ -119,7 +115,7 @@ const card1 = document.getElementById('card-1');
 const scroller = document.getElementById('wrapper-carusel');
 
 let itemWidth = card1.clientWidth;
-let scrollerWidth = scroller.clientWidth;
+let scrollerWidth = scroller.clientWidth;/*clientWidth*/
 
 window.addEventListener('resize',()=>{ 
     scrollerWidth = scroller.clientWidth;
@@ -136,14 +132,7 @@ prevBtn.addEventListener('click', scrollToNextItem);
 
 
 function scrollToNextItem() {
-    console.log('=========================================');
-    console.log('scrollLeft => '+scroller.scrollLeft);
-    console.log('compare => legt mast be ' + (scroller.scrollLeft+scrollerWidth)+'<'+((scroller.scrollWidth)-scrollerWidth));
-    console.log( scroller.scrollLeft -((scroller.scrollWidth+itemWidth )- itemWidth));
-    console.log('itemWidth => '+itemWidth);
-    console.log('scrollerWidth => '+scrollerWidth);
-    console.log('win width = '+ window.innerWidth );
-    console.log('=========================================');
+   
     let badabum = scrollerWidth;
     if (window.innerWidth > 1279){badabum = 100};
     console.log('badabum = ' + badabum)
@@ -151,16 +140,13 @@ function scrollToNextItem() {
     //  scroller.scrollBy({left: scrollerWidth+scrollerWidth/5, top: 0, behavior:'smooth'});
     if((scroller.scrollLeft+badabum) < ((scroller.scrollWidth)-scrollerWidth))/*/2  - itemWidth*/
         scroller.scrollBy({left: scrollerWidth, top: 0, behavior:'smooth'})
- else 
-        scroller.scrollTo({left: 0, top: 0, behavior:'auto'});
+ else {
+    
+        scroller.scrollTo({left: 0, top: 0, behavior:'auto'})};
  }
  function scrollToPrevItem() {
-    console.log('=========================================');
-    console.log('scrollRight <= '+scroller.scrollLeft)
-    console.log('itemWidth <= '+itemWidth);
-    console.log('scrollerWidth <= '+scrollerWidth);
-    console.log('=========================================');
-    if(scroller.scrollLeft > 210) //!=0
+    
+    if(scroller.scrollLeft >100) //!=0
     
         scroller.scrollBy({left: -scrollerWidth, top: 0, behavior:'smooth'});
     else
@@ -185,14 +171,14 @@ window.addEventListener('resize',()=>{
 
 
  function scrollToNextItem321() {
-    console.log('scrollLeft => '+scroller321.scrollLeft);
+  
     if((scroller321.scrollLeft+100)< ((scroller321.scrollWidth)-scrollerWidth321))
         scroller321.scrollBy({left: scrollerWidth321, top: 0, behavior:'smooth'});
     else
         scroller321.scrollTo({left: 0, top: 0, behavior:'auto'});
  }
  function scrollToPrevItem321() {
-    console.log('scrollLeft <= '+scroller321.scrollLeft);
+   
     if(scroller321.scrollLeft > 50)//!=100
         scroller321.scrollBy({left: -scrollerWidth321, top: 0, behavior:'smooth'});
     else
@@ -206,45 +192,4 @@ const modalCloseBut = document.getElementById('pets-modal-close-but');
 modalCloseBut.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
 })
-
-//===============================================================================================
-/*
-let sliderCardArr = [];
-const sliderCards = document.querySelectorAll('.slider-card');
-
-
-
-
-for ( let i=0; i<sliderCards.length; i++){
-
-    sliderCardArr[i]=`<div class="slider-card slider-card-${i+1}" id="card-${i+1}">
-                            ${sliderCards[i].innerHTML}
-                      </div> `
-}                       
-
-let scrollerNew = document.getElementById('wrapper-carusel');
-
-console.log(' slider arr');
-console.log(sliderCardArr);
-scrollerNew.innerHTML = '';
-for (let i=0; i<sliderCardArr.length/2; i++){
-
-    scrollerNew.innerHTML += sliderCardArr[i];
-
-    document.getElementById(`info-button-${i+1}`).addEventListener('click',()=>{
-
-        petsModalWin.style.display = 'flex';
-        modalFoto.style.backgroundImage = `url(${petsBase[i].img})`;
-        modalName.innerText = petsBase[i].name
-        modalTypeBreed.innerText = `${petsBase[i].type} - ${petsBase[i].breed}`;
-        modalDescription.innerText = petsBase[i].description;
-        modalAge.innerHTML = `<span class="list-text"> <b>Age:</b> ${petsBase[i].age}</span>`;
-        modalInocul.innerHTML = `<span class="list-text"><b>Inoculations:</b> ${petsBase[i].inoculations}</span>`;
-        modalDiseases.innerHTML = `<span class="list-text"><b>Diseases:</b> ${petsBase[i].diseases}</span>`;
-        modalParasites.innerHTML = `<span class="list-text"><b>Parasites:</b> ${petsBase[i].parasites}</span>`;
-    
-      })
-
-
-}*/
 
