@@ -1018,6 +1018,7 @@ margin: 0 31.37vw 4.71vw 31.37vw;
 }
 
 .slider-card{
+   
     display: flex;
     flex-direction: column;
     height: 42.76vw;
@@ -1025,7 +1026,9 @@ margin: 0 31.37vw 4.71vw 31.37vw;
     /*margin: auto 5vw auto 5vw;*/
     border-radius: 0.71vw;
     background: #FAFAFA;
-    transition: all 0.5s;
+
+    transition: all ease 0.5s;
+    
     scroll-snap-align: start;
     margin: 0 2.5vw 0 2.5vw;
 }
@@ -2616,7 +2619,7 @@ margin:0 auto 4.71vw auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;/*========================================================================*/
     width: 80vw;/*83vw===========================*/
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     
     
     /*scrollbar-width: 0;*/
