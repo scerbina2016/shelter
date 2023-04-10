@@ -189,6 +189,11 @@ window.addEventListener('resize',()=>{
 //==========================================modal block=====================================
 
 const modalCloseBut = document.getElementById('pets-modal-close-but');
+const modalContent = document.getElementById('pets-modal-content');
+modalContent.addEventListener('click',(e)=> {e.stopPropagation()});
+petsModalWin.addEventListener('click',()=>{
+    petsModalWin.style.display = 'none';
+})
 
 modalCloseBut.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
