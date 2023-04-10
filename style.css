@@ -2608,11 +2608,11 @@ margin:0 auto 4.71vw auto;
 
 }
 
-
-
+/*=============================================================================================*/
+/*============================= wrapper =======================================================*/
 
 .slider-wrapper{
-    display: flex;
+    display: grid;/*flex*/
     flex-direction: row;
     /*flex-wrap: wrap;*/
     overflow-x: scroll;
@@ -2624,6 +2624,18 @@ margin:0 auto 4.71vw auto;
     
     /*scrollbar-width: 0;*/
 }
+
+/* ===== grid distribution ==============================================================*/
+
+#card-1, #card321-1 {grid-column: 1/2;grid-row: 1/2;}
+#card-2, #card321-2 {grid-column: 2/3;grid-row: 1/2;}
+#card-3, #card321-3 {grid-column: 3/4;grid-row: 1/2;}
+#card-4, #card321-4 {grid-column: 4/5;grid-row: 1/2;}
+#card-5, #card321-5 {grid-column: 5/6;grid-row: 1/2;}
+#card-6, #card321-6 {grid-column: 6/7;grid-row: 1/2;}
+#card-7, #card321-7 {grid-column: 7/8;grid-row: 1/2;}
+#card-8, #card321-8 {grid-column: 8/9;grid-row: 1/2;}
+
 
 .slider-wrapper::-webkit-scrollbar {
     width: 0px;

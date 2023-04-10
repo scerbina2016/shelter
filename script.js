@@ -107,6 +107,7 @@ drop.addEventListener('click',() =>{
 });
 
 //====================================== dropdown menu end ===========================================
+
 if(document.title === 'Shelter'){
 let countClick = 0;
 const sliderLeftButton = document.getElementById('slider-left-button');
@@ -193,3 +194,120 @@ modalCloseBut.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
 })
 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// slider wia grid======================================================
+/*if(document.title === 'Shelter'){
+const cardGrid1 = document.getElementById('card-1');
+const cardGrid2 = document.getElementById('card-2');
+const cardGrid3 = document.getElementById('card-3');
+const cardGrid4 = document.getElementById('card-4');
+const cardGrid5 = document.getElementById('card-5');
+const cardGrid6 = document.getElementById('card-6');
+const cardGrid7 = document.getElementById('card-7');
+const cardGrid8 = document.getElementById('card-8');
+const cardGrid9 = document.getElementById('card-8');
+const cardGrid10 = document.getElementById('card-8');
+const cardGrid11 = document.getElementById('card-8');
+
+
+let countClick = 0;
+const scroller = document.getElementById('wrapper-carusel');
+
+let itemWidth = cardGrid1.clientWidth;
+let scrollerWidth = scroller.clientWidth;/*clientWidth*/
+
+/*window.addEventListener('resize',()=>{ 
+    scrollerWidth = scroller.clientWidth;
+    itemWidth = cardGrid1.clientWidth;
+    console.log('title => '+ document.title);
+
+});
+
+
+
+const leftBtnExp = document.getElementById('slider-left-button');
+const rightBtnExp = document.getElementById('slider-right-button');
+
+leftBtnExp.addEventListener('click', scrollToPrevItemExp);/* убрать 321*/
+/*rightBtnExp.addEventListener('click', scrollToNextItemExp);
+
+let countAddBlock = 0;
+function scrollToNextItemExp() {
+   
+    let badabum = scrollerWidth;
+    if (window.innerWidth > 1279){badabum = 100};
+    console.log('badabum = ' + badabum)
+    //if(scroller.scrollLeft < ((scroller.scrollWidth/2+itemWidth )- itemWidth))
+    //  scroller.scrollBy({left: scrollerWidth+scrollerWidth/5, top: 0, behavior:'smooth'});
+    //if((scroller.scrollLeft+badabum) < ((scroller.scrollWidth)-scrollerWidth))/2  - itemWidth*/
+        /*scroller.scrollBy({left: scrollerWidth, top: 0, behavior:'smooth'})
+ else {
+        countAddBlock++;
+
+        /*cardGrid1.style.gridColumn = '9/10';/*1/2*/
+        /*cardGrid2.style.gridColumn = '10/11';/*2/3*/
+        //cardGrid3.style.gridColumn = '11/12';/*3/4*/
+        //cardGrid4.style.gridColumn = '12/13';/*3/4*/
+        //cardGrid5.style.gridColumn = '13/14';/*3/4*/
+        //cardGrid6.style.gridColumn = '14/15';/*3/4*/
+        //cardGrid7.style.gridColumn = '15/16';/*3/4*/
+        //cardGrid8.style.gridColumn = '16/17';/*3/4*/
+        /*console.log('grid transform ==== =====')
+        scroller.insertAdjacentHTML("beforeend", `<div class="card slider-card slider-card-1" id="card-1"> 
+        <div class="slider-card-foto slider-foto-1"  id="foto-1"></div>
+        <div class="slider-card-name slider-name-1" id="name-1">Katrine</div>
+        <div class="slider-card-button slider-button-1" id="info-button-1">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-2" id="card-2">
+        <div class="slider-card-foto slider-foto-2" id="foto-2"></div>
+        <div class="slider-card-name slider-name-2" id="name-2">Jennifer</div>
+        <div class="slider-card-button slider-button-2 " id="info-button-2">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-3" id="card-3">
+        <div class="slider-card-foto slider-foto-3" id="foto-3"></div>
+        <div class="slider-card-name slider-name-3" id="name-3">Woody</div>
+        <div class="slider-card-button slider-button-3" id="info-button-3">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-4" id="card-4">
+        <div class="slider-card-foto slider-foto-4" id="foto-4"></div>
+        <div class="slider-card-name slider-name-4" id="name-4">4</div>
+        <div class="slider-card-button slider-button-4" id="info-button-4">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-5" id="card-5">
+        <div class="slider-card-foto slider-foto-5" id="foto-5"></div>
+        <div class="slider-card-name slider-name-5" id="name-5">5</div>
+        <div class="slider-card-button slider-button-5" id="info-button-5">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-6" id="card-6">
+        <div class="slider-card-foto slider-foto-6" id="foto-6"></div>
+        <div class="slider-card-name slider-name-6" id="name-6">6</div>
+        <div class="slider-card-button slider-button-6" id="info-button-6">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-7" id="card-7">
+        <div class="slider-card-foto slider-foto-7" id="foto-7"></div>
+        <div class="slider-card-name slider-name-7" id="name-7">7</div>
+        <div class="slider-card-button slider-button-7" id="info-button-7">Learn more</div>
+    </div>
+    <div class="card slider-card slider-card-8" id="card-8">
+        <div class="slider-card-foto slider-foto-8" id="foto-8"></div>
+        <div class="slider-card-name slider-name-8" id="name-8">8</div>
+        <div class="slider-card-button slider-button-8" id="info-button-8">Learn more</div>
+    </div>
+        `);
+
+
+        //scroller.scrollTo({left: 0, top: 0, behavior:'auto'})
+        scroller.scrollBy({left: scrollerWidth, top: 0, behavior:'smooth'})
+    };
+ }
+ function scrollToPrevItemExp() {
+    
+    if(scroller.scrollLeft >100) //!=0
+    
+        scroller.scrollBy({left: -scrollerWidth, top: 0, behavior:'smooth'});
+    else
+         scroller.scrollTo({left: scroller.scrollWidth, top: 0, behavior:'auto'});
+ }
+}*/
