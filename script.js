@@ -24,7 +24,7 @@ if(document.title === 'Shelter'){
   document.getElementById(`name321-${i}`).innerText = `${petsBase[i-1].name}`;  
 
   document.getElementById(`card-${i}`).addEventListener('click',()=>{
-
+    document.body.style.overflowY = 'hidden';
     petsModalWin.style.display = 'flex';
     modalFoto.style.backgroundImage = `url(${petsBase[i-1].img})`;
     modalName.innerText = petsBase[i-1].name
@@ -193,10 +193,12 @@ const modalContent = document.getElementById('pets-modal-content');
 modalContent.addEventListener('click',(e)=> {e.stopPropagation()});
 petsModalWin.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
+    document.body.style.overflowY = 'scroll';
 })
 
 modalCloseBut.addEventListener('click',()=>{
     petsModalWin.style.display = 'none';
+    document.body.style.overflowY = 'scroll';
 })
 
 
