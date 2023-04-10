@@ -53,11 +53,11 @@ butRightEnd.style.cursor = 'pointer';
 
 if((numberPage > 1) && (numberPage < maxPage)){
     butLeftEnd.style.borderColor = '#F1CDB3';
-butLeftEnd.style.color = '#29292';
+butLeftEnd.style.color = '#292929';
 butLeftEnd.style.cursor = 'pointer';
 
 butLeftPage.style.borderColor = '#F1CDB3';
-butLeftPage.style.color = '#29292';
+butLeftPage.style.color = '#292929';
 butLeftPage.style.cursor = 'pointer';
 
 butRightPage.style.borderColor = '#F1CDB3 ';
