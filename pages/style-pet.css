@@ -49,7 +49,7 @@ h2{margin: 0;}
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .our-pets-header-1280{
 
         height: 18.69vw;/*4.7vw 7.76*/
@@ -75,7 +75,7 @@ h2{margin: 0;}
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .our-pets-header-logo-1280{
         width: 60.32vw;/*57.32*/
         height: 18.69vw;
@@ -117,7 +117,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-header-logo-title-1280{
         font-size: 9.97vw;
@@ -157,7 +157,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-header-logo-subtitle-1280{
         font-size: 4.05vw;
@@ -194,7 +194,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-header-nav-1280{
         display: none;  
@@ -257,7 +257,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-pet-1280{
         
@@ -271,7 +271,7 @@ h2{margin: 0;}
 .our-pets-pet-content {
     display: flex;
     flex-direction: column;
-    height: 91.14vw;
+    height: 100.14vw;/*91.14vw*/
     width: 94.18vw;
     margin: 6.27vw 2.51vw 7.84vw 2.43vw;
 }
@@ -286,11 +286,11 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-pet-content{
         width: 93.46vw;
-        height: 487.54vw;
+        height: 495.94vw;/*487.54vw*/
        margin: auto;
     }
     
@@ -321,7 +321,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-pet-content-heading{
         width: 93.46vw;
@@ -334,41 +334,108 @@ h2{margin: 0;}
 }
 
 .our-pets-pet-content-card-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;/*flex*/
+    overflow-x: scroll;/*hidden=====================================?????????????????????*/
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    flex-direction: row;/*row======================================?????????????????*/
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
+    /*align-content: space-between;*/
     height: 92.35vw;
     width: 94.18vw;
 }
+.our-pets-pet-content-card-container::-webkit-scrollbar {
+    width:auto;
+    height:auto;
+  }
 
+
+/*===============================================типа грид========================================*/
+#card-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#card-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#card-3{grid-column: 3/4;grid-row: 1/2;}
+#card-4{grid-column: 4/5;grid-row: 1/2;}
+#card-5{grid-column: 1/2;grid-row: 2/3;}
+#card-6{grid-column: 2/3;grid-row: 2/3;}
+#card-7{grid-column: 3/4;grid-row: 2/3;}
+#card-8{grid-column: 4/5;grid-row: 2/3;}
+
+
+/*=====================================================================================================*/
 @media screen and (max-width: 1279px) {
+    
+/*===============================================типа грид========================================*/
+#card-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#card-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#card-3{grid-column: 1/2;grid-row: 2/3;}
+#card-4{grid-column: 2/3;grid-row: 2/3;}
+#card-5{grid-column: 1/2;grid-row: 3/4;}
+#card-6{grid-column: 2/3;grid-row: 3/4;}
+#card-7{grid-column: 3/4;grid-row: 1/2;}
+#card-8{grid-column: 4/5;grid-row: 1/2;}
+
+
+/*=====================================================================================================*/
 
     .our-pets-pet-content-card-container{
-        width: 74.84vw;
-        height: 176.13vw;
+        justify-content:space-between;
+        width: 70.84vw;/*74.84vw*/
+        height: 172.13vw;/*176.13vw*/
         margin: 0 auto 5.16vw auto;
     }
-    .slider-card-7{
+   /* .slider-card-7{
         display: none;
     }
     .slider-card-8{
         display: none;
-    }
+    }*/
     .pet-card-3{
         display: flex;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+/*===============================================типа грид========================================*/
+#card-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#card-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#card-3{grid-column: 1/2;grid-row: 2/3;}
+#card-4{grid-column: 2/3;grid-row: 2/3;}
+#card-5{grid-column: 1/2;grid-row: 3/4;}
+#card-6{grid-column: 2/3;grid-row: 3/4;}
+#card-7{grid-column: 3/4;grid-row: 1/2;}
+#card-8{grid-column: 3/4;grid-row: 2/3;}
+
+
+/*=====================================================================================================*/
+
 
     .our-pets-pet-content-card-container{
-        width: 84.11vw;
-        height: 425.23vw;
+        width: 84vw;/*84.11vw*/
+        height: 435.23vw;/*425.23vw*//*=================================*/
         margin: 13.08vw auto 13.08vw auto;/*==============================*/
     }
 
-    .slider-card-4{
+    /*.slider-card-4{
         display: none;
     }
     .slider-card-5{
@@ -387,7 +454,7 @@ h2{margin: 0;}
     }
     .slider-card-8{
         display: none;
-    }
+    }*/
     .pet-card-3{
         display: flex;
     }
@@ -396,7 +463,7 @@ h2{margin: 0;}
 }
 
 .pet-card{
-    margin: 0;
+    margin:0;
     background: #FAFAFA;
 }
 .slider-foto-4{
@@ -445,7 +512,7 @@ h2{margin: 0;}
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .our-pets-pet-content-navigation{
         width: 93.46vw;
@@ -458,7 +525,7 @@ h2{margin: 0;}
 .button-paginator{
     height: 4.08vw;
     width: 4.08vw;
-    border: 0.16vw solid #CDCDCD;
+    border: 0.20vw solid #CDCDCD;
     border-radius: 7.84vw;
     font-family: 'Georgia';
     font-style: normal;
@@ -471,7 +538,7 @@ h2{margin: 0;}
     text-align: center;
     letter-spacing: 0.06em;
     color: #CDCDCD;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 @media screen and (max-width: 1279px) {
@@ -481,28 +548,28 @@ h2{margin: 0;}
         height: 6.71vw;
         font-size: 2.57vw;
         line-height: 115%;
-        border: 0.26vw solid #CDCDCD;
+        border: 0.20vw solid #CDCDCD;
         margin: auto;
     }
     
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .button-paginator{
         width: 16.2vw;
         height: 16.2vw;
         font-size: 6.32vw;
         line-height: 115%;
-        border: 0.26vw solid #CDCDCD;
+        border: 0.20vw solid #CDCDCD;
         margin: auto;
     }
     
 
 }
 
-.button-paginator:hover{
+/*.button-paginator:hover{
     font-size: 2vw;
     border-width: 0.31vw;
 }
@@ -516,7 +583,7 @@ h2{margin: 0;}
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .button-paginator:hover{
         font-size: 8vw;
@@ -524,7 +591,7 @@ h2{margin: 0;}
     }
     
 
-}
+}*/
 
 .button-paginator:active{
     font-size: 2.35vw;
@@ -544,12 +611,12 @@ h2{margin: 0;}
 
 .button-paginator-inactive-right-1{
     color:#292929;
-    border: 0.16vw solid #F1CDB3;
+    border: 0.20vw solid #F1CDB3;
 }
 
 .button-paginator-inactive-right-2{
     color:#292929;
-    border: 0.16vw solid #F1CDB3;
+    border: 0.20vw solid #F1CDB3;
 }
 
 
