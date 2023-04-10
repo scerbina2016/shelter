@@ -68,6 +68,7 @@ let dropMainIco = document.getElementById('drop-ico');
 let menuOpened = false;
 
 let smallOpen = () => {
+    document.body.style.overflowY = 'hidden';
     if( window. innerWidth > 321) {
         dropDownBlock.style.width = '320px';
     } else {
@@ -78,7 +79,18 @@ let smallOpen = () => {
     
 }
 
+/*const startScr=document.querySelector('.start-screen-1280');
+
+startScr.addEventListener('click',()=> {
+    document.body.style.overflowY = 'scroll';
+    menuOpened = false;
+    dropDownBlock.style.width = '0px';
+    closeBurger.style.transform = "rotate(0deg)";
+    setTimeout(() => dropMainIco.style.transform = "rotate(0deg)", 400);
+});*/
+
 closeBurger.addEventListener('click',()=> {
+    document.body.style.overflowY = 'scroll';
     menuOpened = false;
     dropDownBlock.style.width = '0px';
     closeBurger.style.transform = "rotate(0deg)";
@@ -86,6 +98,7 @@ closeBurger.addEventListener('click',()=> {
 });
 
 dropDownBlock.addEventListener('click',()=> {
+    document.body.style.overflowY = 'scroll';
     menuOpened = false;
     dropDownBlock.style.width = '0px';
     closeBurger.style.transform = "rotate(0deg)";
