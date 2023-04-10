@@ -23,7 +23,7 @@ if(document.title === 'Shelter'){
   document.getElementById(`foto321-${i}`).style.backgroundImage = `url(${petsBase[i-1].img})`;  
   document.getElementById(`name321-${i}`).innerText = `${petsBase[i-1].name}`;  
 
-  document.getElementById(`info321-button-${i}`).addEventListener('click',()=>{
+  document.getElementById(`card-${i}`).addEventListener('click',()=>{
 
     petsModalWin.style.display = 'flex';
     modalFoto.style.backgroundImage = `url(${petsBase[i-1].img})`;
